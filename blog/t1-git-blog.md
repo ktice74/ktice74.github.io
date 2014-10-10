@@ -22,3 +22,9 @@ While git exists locally on your computer, GitHub is an on-line repository that 
 How do git and GitHub relate to one another? (another thing about traveling is that your surrounding friends are few and far between so as my talking to myself emphasizes, you're your own best friend out there...) You are able to push your local changes through git remotely directly to the GitHub server.
 
 That's about it! Thanks for reading and hope that you learned something!
+
+A final note about the similarities between traveling and my introduction to software development (and future blogposts), I'm reminded of one of my favorite quotes about traveling and getting to know one's self:
+
+"Our battered suitcases were piled on the sidewalk again; we had longer ways to go. But no matter, the road is life.” – Jack Kerouac"
+
+When we travel, we are completely ourselves, stripped of our familiar surroundings, acquaintances and belongings. Similarly, when learning a new craft, we are stripped of these very same things. It's during these times that we ultimately learn the most about ourselves because we are the closest to our "true selves." It's never the easiest way to go through life but it certainly is the most meaningful.
