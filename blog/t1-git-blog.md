@@ -19,6 +19,6 @@ While this explanation is very abstract. I'll try to narrow it down in more conc
 
 While git exists locally on your computer, GitHub is an on-line repository that allows users to access one another's files and code remotely by logging into www.github.com. By posting your files and code to this on-line repository, others can access these files and clone them onto their local machines which allow them to contribute and modify the existing code.
 
-How do git and GitHub relate to one another? (another thing about traveling is that your surrounding friends are few and far between so as my talking to myself emphasizes, you're your own best friend out there...) You are able to push your local changes through git remotely to the GitHub server.
+How do git and GitHub relate to one another? (another thing about traveling is that your surrounding friends are few and far between so as my talking to myself emphasizes, you're your own best friend out there...) You are able to push your local changes through git remotely directly to the GitHub server.
 
 That's about it! Thanks for reading and hope that you learned something!
