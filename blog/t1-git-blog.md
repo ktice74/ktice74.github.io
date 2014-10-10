@@ -27,4 +27,4 @@ A final note about the similarities between traveling and my introduction to sof
 
 "Our battered suitcases were piled on the sidewalk again; we had longer ways to go. But no matter, the road is life.” – Jack Kerouac"
 
-When we travel, we are completely ourselves, stripped of our familiar surroundings, acquaintances and belongings. Similarly, when learning a new craft, we are stripped of these very same things. It's during these times that we ultimately learn the most about ourselves because we are the closest to our "true selves." It's never the easiest way to go through life but it certainly is the most meaningful.
+When traveling, we are completely ourselves, stripped of our familiar surroundings, acquaintances and belongings. Similarly, when learning a new craft, we are stripped of these very same things. It's during these times that we ultimately learn the most about ourselves because we are the closest to our "true selves." It's never the easiest way to go through life but it certainly is the most meaningful.
