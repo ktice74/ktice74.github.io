@@ -1,0 +1,86 @@
+div.header_title, div.navigation, div.body, div.links{
+  border:1px;
+  border-style: solid;
+  border-color: black;
+/*  display: inline-block;
+*/}
+
+div.header_title{
+}
+
+div.header_title img{
+  width:25%;
+  height:25%;
+}
+
+div.navigation ul li, div.links ul li{
+  list-style-type: none;
+}
+
+div.navigation{
+  position:absolute;
+  width:15%;
+  height:auto;
+  float: left;
+}
+
+.social {
+  float: right;
+  display: inline;
+}
+
+
+div.body{
+  position:relative;
+  top:auto;
+  left:15%;
+  width:65%;
+/*  margin-left: 4px;
+*/}
+
+div.body p {
+  padding: 5px;
+}
+
+div.links{
+  position:relative;
+  left:80%;
+  width:auto;
+/*  margin-left: 6px;
+*/  margin-top: -24.8%
+}
+
+div.footer {
+   position:fixed;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background:#6cf;
+}
+
+#wrapper {
+  min-height:100%;
+  position:relative;
+}
+#header {
+  padding:10px;
+  background:#5ee;
+}
+#content {
+  padding:10px;
+  padding-bottom:80px;   /* Height of the footer element */
+}
+#footer {
+  width:101%;
+  height:80px;
+  position:absolute;
+  bottom:1;
+  left:0;
+  background:#ee5;
+  margin-left: -7px;
+}
+/*div.body{
+  position:relative;
+  left:15%;
+  top:35%;
+}*/
