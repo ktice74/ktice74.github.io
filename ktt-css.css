@@ -1,9 +1,8 @@
-div.header_title, div.navigation, div.body, div.links{
+/*div.header_title, div.navigation, div.body, div.links{
   border:1px;
   border-style: solid;
   border-color: black;
-/*  display: inline-block;
-*/}
+*/
 
 div.header_title{
 }
@@ -18,7 +17,7 @@ div.navigation ul li, div.links ul li{
 }
 
 div.navigation{
-  position:absolute;
+  position:relative;
   width:15%;
   height:auto;
   float: left;
@@ -33,13 +32,32 @@ div.navigation{
 div.body{
   position:relative;
   top:auto;
-  left:15%;
+  left:10%;
   width:65%;
-/*  margin-left: 4px;
+/*  display: inline-block;
+*//*  margin-left: 4px;
 */}
 
 div.body p {
   padding: 5px;
+}
+
+body {
+  background-color: #d0d0d0;
+}
+
+h1 {
+  color:143DE8;
+}
+
+a {
+  color: 4632FF;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: 46A9FF;
+  text-decoration: underline;
 }
 
 div.links{
@@ -55,7 +73,12 @@ div.footer {
    bottom:0;
    width:100%;
    height:60px;   /* Height of the footer */
-   background:#6cf;
+   background:black;
+}
+
+#footer p {
+  color: white;
+  margin-top: 5px;
 }
 
 #wrapper {
@@ -64,7 +87,7 @@ div.footer {
 }
 #header {
   padding:10px;
-  background:#5ee;
+  background:black;
 }
 #content {
   padding:10px;
@@ -72,12 +95,21 @@ div.footer {
 }
 #footer {
   width:101%;
-  height:80px;
-  position:absolute;
+  height:30px;
+  position:fixed;
   bottom:1;
   left:0;
-  background:#ee5;
+  background:black;
   margin-left: -7px;
+}
+
+div#twitter-widget-0, div#twitter-widget-0, .timeline, #twitterfeed {
+  width: 250px;
+  float: right;
+  position: absolute;
+  top: 15%;
+  left: 75%;
+  padding-bottom: 40px;
 }
 /*div.body{
   position:relative;
