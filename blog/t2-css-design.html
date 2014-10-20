@@ -1,0 +1,16 @@
+
+In building my webpage, I found the biggest challenge was moving my <div>s around the page. Therefore, in this week's reflection, I will attempt to explain how to move around <div>s by using the position property. The three different layout properties that you can assign to <div>s are: relative, absolute and fixed positioning.
+
+Before we talk about the position property, we should first take a step back and discuss what <div>s are. A div element is a "block" (or a better image may be a rectangle) of pixels that contains any number of elements (text, images, links, etc.) inside of it. By default, when a webpage is created, each <div> will inherit a static property, which means that it will occupy the space according to where it appears within the html code.
+
+In order to move the <div> around, however, you can assign the CSS property of position.
+
+First, let's take a look at the {position: relative;} assignment. Once assigning an element to a relative positioning, you would be able to give it additional top, left, right or bottom properties and assign values of how far to the left, right, top or bottom you would like the element to move. The easiest way to think about these relative positions would be to think of those values as "relative to itself," or relative to where it would normally be without any CSS properties. Therefore, if you assign an element {position: relative; top: 5px;}, it would move the element upwards 5px.
+
+Conversely, the {position: absolute} property, allows you to literally place the element anywhere you want on the webpage. You can assign the exact dimensions of the page where you want the element to appear, regardless of the properties that the elements inherits.
+
+So whereas a {position: relative; top:5px;} assignment would move that element upwards of 5px, a {position: absolute; top:5px;} would place that element at the very top of the page (or <div> if that element is contained within a div), regardless of the inherited position of the element. So when you are using an absolute position, you can choose the exact coordinates of where that element should appear.
+
+Finally, you can assign an element with Fixed positioning. A fixed element means that it will not disappear or move as a result of scrolling up or down on the page. That element will remain fixed and is resistent to scrolling.
+
+I hope this article sheds some light on how to move <div>s and elements around on a webpage.
