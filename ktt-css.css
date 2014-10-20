@@ -4,6 +4,8 @@
   border-color: black;
 */
 
+
+#kindy {text-align: center;}
 div.header_title{
 }
 
@@ -18,14 +20,24 @@ div.navigation ul li, div.links ul li{
 
 div.navigation{
   position:relative;
-  width:15%;
+  width:100%;
   height:auto;
-  float: left;
+/*  float: left;
+*/}
+
+#navmenu {
+  margin-left: 150px;
+}
+
+div.navigation a {
+    padding: 0px 30px 0px 30px;
+
 }
 
 .social {
   float: right;
   display: inline;
+  margin-top: -30px;
 }
 
 
@@ -34,6 +46,7 @@ div.body{
   top:auto;
   left:10%;
   width:65%;
+  background-color: white;
 /*  display: inline-block;
 *//*  margin-left: 4px;
 */}
@@ -85,9 +98,9 @@ div.footer {
   min-height:100%;
   position:relative;
 }
-#header {
+#header, head {
   padding:10px;
-  background:black;
+  background:B0B1BD;
 }
 #content {
   padding:10px;
