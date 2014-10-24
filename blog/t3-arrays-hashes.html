@@ -1,0 +1,101 @@
+<html>
+<head>
+  <title>Kindy's Bumpin Site</title>
+  <link rel="stylesheet" type="text/css" href="./ktt-css.css">
+</head>
+  <body>
+    <div id="header">
+      <div id="Kindy"><img src=""><h1>Kindy Tice</h1></div>
+
+<div class="navigation">
+        <a href="./about.html">About</a>
+        <a href="./portfolio.html">Portfolio</a>
+        <a href="./techresources.html">Tech Resources</a>
+       <a href="./contact.html">Contact</a>
+    </div>
+
+  <div class="social">
+      <p>
+        <p><a href="https://www.facebook.com/kindy.thomas" target="_blank">
+        <img src="http://static.viewbook.com/images/social_icons/facebook_16.png"></a>
+        <a href="https://twitter.com/themishu74" target="_blank">
+        <img src="http://static.viewbook.com/images/social_icons/twitter_16.png"></a>
+        <a href="https://www.linkedin.com/pub/kindy-tice/27/564/a75" target="_blank">
+        <img src="http://static.viewbook.com/images/social_icons/linkedin_16.png"></a>
+        <a href="https://github.com/ktice74/" target="_blank">
+        <img src="https://raw.githubusercontent.com/ktice74/ktice74.github.io/master/img/Images/Octocat.png" alt="githubicon" style="width: 16px;height:16px;"></a>
+        </p>
+    </div></div></div>
+
+  <div id="wrapper">
+
+    <div id="content">
+
+    <div class="body">
+      <h1>Hello, World!</h1>
+      <p>Please click <a href="https://raw.githubusercontent.com/ktice74/ktice74.github.io/master/blog/c1-chefs-kitchen.md" target="_blank">here (Chef's Kitchen)</a> and <a href="https://raw.githubusercontent.com/ktice74/ktice74.github.io/master/blog/t1-git-blog.md" target="_blank">here (Git Explanation and Travelling Blog Post)</a>
+
+      <p>Arrays of Insight: Hashing out Arrays and Hashes in Ruby</p>
+
+
+ <p></p>Arrays and hashes are just a list on your computer, or more specifically, they are indexed collections. Both store collections of objects and are accessible using a key. The reason that you would want to use an array or hash is because variables can only hold one item at a time. Arrays and hashes can hold multiple items and the list can grow over time.</p>
+
+<p>For arrays, the keys are integers, as each object in the list is automatically assigned a place holder value (or in Ruby speak, an index) which starts at zero.</p>
+
+<p>Let’s go ahead and create a list.
+>> data = [“mishu”, 3, 0.745, true, (0, 3)]
+Arrays can be heterogenous, meaning that all of the values do not have to be the same data types. The above is a valid array, and you will not receive an error even though the values are respectively, a string, integer, float, boolean value and then another array.</p>
+
+<h1>Arrays</h1>
+
+<p>Each value within the array has a placeholder (or in Ruby-speak, indexes), which start with 0. So if we were to ask ruby:
+data[0] it would return “mishu” because the string “mishu” is in the first placeholder.
+We can also see how many total values are contained in the array by asking >> data.size which returns => 5.</p>
+
+<p>While the values in an array have the keys of automatically assigned indexes, hashes on the other hand allow you to assign each value with their own unique key.</p>
+
+<p>As you can imagine, arrays are easier to build and keep track of, while hashes allow for more flexibility.</p>
+
+<h1>Hashes</h1>
+
+<p>Take a look at this hash (and notice that we’re using a squiggly bracket instead of a square bracket that are assigned to arrays.
+
+<span style="margin-left: 20px;">>> home_teams = {
+ ‘Brewers’ => ‘baseball’,
+ ‘Packers’ => ‘football’,
+ ‘Bucks’ => ‘basketball’,
+ ‘Admirals’ => ‘hockey’,
+ ‘Wave’ => ‘soccer'
+}</span>
+</p>
+
+<p>In this hash, I’ve assigned the values of each (Milwaukee area) home sports team and assigned their keys to be the sports that they represent.
+</p>
+<p>So if I wanted to know the home_team [‘football’], Ruby would tell me that the value would be ‘Packers’.</p>
+
+<p>I could then create a separate hash for adopted_hometeams and list all of the Bay Area sports teams:
+
+
+<span style="margin-left: 20px;">>> adopted_hometeams = {
+ ‘Giants’ => ‘baseball’,
+ ‘49ers’ => ‘football’,
+ ‘Warriors’ => ‘basketball’,
+ ’Sharks’ => ‘hockey’,
+ ‘Earthquakes’ => ‘soccer’,
+}</span></p>
+
+<p>If I were to ask for adopted_hometeams [‘football’], ruby would return ‘49ers’. Since there are individualized local variables for each array, we don’t have to worry about having the same key names within each hash.</p>
+
+  </div>
+<div id="twitterfeed">
+<a class="twitter-timeline" href="https://twitter.com/themishu74" data-widget-id="523995660526182401">Tweets by @themishu74</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+</div>
+  </div>
+  <div id="footer">
+    <p style="text-align: center;">Copyright Kindy Tice, 2014.</p>
+  </div>
+</div>
+  </body>
+</html>
