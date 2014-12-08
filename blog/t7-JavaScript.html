@@ -1,0 +1,56 @@
+<p>After spending a few weeks getting familiar with Ruby, this week we were introduced to JavaScript. Just like two different human languages, JavaScript and Ruby look and behave similarly but where they differ is in their syntax.</p>
+
+<p>In this entry, I will describe how JavaScript Objects and Ruby hashes differ.</p>
+
+<p>Let's go ahead and build a JavaScript object:</p>
+
+<p><u>JavaScript</u></p>
+
+
+
+<p style="margin-left: 25px;">var Simpsons = {};<br/>
+Simpsons.dad = "Homer"</span></br>
+Simpsons.mom = "Marge"</p>
+
+<p>is the same as:</p>
+
+<p style="margin-left: 25px;">var Simpsons = {<br/>
+  dad: "Homer",<br/>
+  mom: "Marge",<br/>
+};</p>
+
+<p>If we would want to call the object property for "name", we would do so by calling:<br/>
+
+Simpsons["dad"] = "Homer"</p>
+
+<p>This is all very similar to the setup of a hash in Ruby.
+
+<p>While there are a couple of different ways to create hashes in Ruby, lets use this the Hash.new method as an example:</p>
+
+<p style="margin-left: 25px;">Simpsons = Hash.new<br/>
+Simpsons = {}<br/>
+Simpsons["dad", "Homer", "mom", "Marge"]<br/>
+Simpsons = {"dad" => "Homer", "mom" => "Marge"}</p>
+
+<p>This looks very similar to the var Simpsons value.</p>
+
+<p>As you can see, the end result is the same. However, lets "peak under the hood" to see exactly what is occuring when we are making these calls.</p>
+
+<p>In JavaScript, we are creating an object, called "object." In order to create, this object, we are declaring the variable name and assigning an empty value.</p>
+
+<p style="margin-left: 25px;">var object = {}<br/>
+var object = {<br/>
+  name: value<br/>
+}</p>
+<p>And therefore...<br/>
+var object.name = value<br/>
+--> We are looking for the name <b>property</b> of the object.<p>
+
+
+
+<p style="margin-left: 25px;">h = Hash.new<br/>
+h = {}<br/>
+h = {key => "key value pair"}<br/>
+h[key] = "key value pair"<br/>
+--> We are looking for the <b>"key value pair"<b> of the key "key"</p>
+
