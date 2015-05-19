@@ -1,0 +1,125 @@
+body {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container {
+  padding: 3%;
+}
+
+nav {
+  display: inline-block;
+  width: 76%;
+  position: fixed;
+  background-color: white;
+  margin-top: -3%;
+  border-bottom: 1px black solid;
+}
+  nav .logo-box {
+    display: inline-block;
+    float: left;
+  }
+    nav .logo-box img {
+      width: 27%;
+    }
+  nav ul {
+    list-style-type: none;
+    vertical-align: bottom;
+  }
+    nav ul li {
+      display: inline-block;
+      float: right;
+      width: 10%;
+    }
+
+header {
+  padding-top: 15%;
+  background-image: url("/images/Mishu.JPG");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-position: center center;
+  background-repeat: none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+  header .intro-text {
+      padding-top: 100px;
+      padding-bottom: 50px;
+      text-align: center;
+  }
+    header .intro-text .intro-lead-in {
+        margin-bottom: 25px;
+        font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 22px;
+        font-style: italic;
+        line-height: 22px;
+        text-align: center;
+    }
+      header .intro-text .intro-heading {
+          margin-bottom: 25px;
+          text-transform: uppercase;
+          font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+          font-size: 50px;
+          font-weight: 700;
+          line-height: 50px;
+          text-align: center;
+          width: 90%;
+          color: #262626;
+      }
+
+@media(min-width:768px) {
+    header .intro-text {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        margin-top: -230px;
+    }
+
+    header .intro-text .intro-lead-in {
+        margin-bottom: 25px;
+        font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 40px;
+        font-style: italic;
+        line-height: 40px;
+        color: white;
+        margin-left: 19%;
+        margin-right: 19%;
+        background: rgb(128, 128, 128);
+        border-radius: 5px;
+      }
+
+    header .intro-text .intro-heading {
+        margin-bottom: 50px;
+        text-transform: uppercase;
+        font-family: 'Londrina Outline', cursive;;
+        font-size: 75px;
+        font-weight: 700;
+        line-height: 75px;
+        color: white;
+    }
+
+
+section {
+  clear: both;
+  border-top: 1px #d0d0d0 solid;
+/*  padding-top: 3%;
+*/}
+  .wrapper img {
+    width: 100%;
+  }
+
+.intro {
+  width: 40%;
+  display: inline-block;
+}
+
+.photo {
+  display: inline-block;
+  widows: 40%;
+}
+  .photo img {
+    border-radius: 50%;
+    border: 2px #d0d0d0 solid;
+  }
