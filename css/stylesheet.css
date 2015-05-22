@@ -3,7 +3,18 @@ body {
   margin: 0 auto;
 }
 
+@font-face{
+  url('')
+}
+
+h1 {
+  text-align: center;
+}
 .container {
+  padding: 3%;
+}
+
+section {
   padding: 3%;
 }
 
@@ -79,7 +90,7 @@ header {
 
     header .intro-text .intro-lead-in {
         margin-bottom: 25px;
-        font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-family: "yggdrasil", "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
         font-size: 40px;
         font-style: italic;
         line-height: 40px;
@@ -110,16 +121,56 @@ section {
     width: 100%;
   }
 
+
 .intro {
-  width: 40%;
+  width: auto;
   display: inline-block;
 }
 
 .photo {
   display: inline-block;
-  widows: 40%;
+  text-align: center;
 }
   .photo img {
     border-radius: 50%;
     border: 2px #d0d0d0 solid;
+    width: 50%;
+    float: right;
+  }
+
+/*Skills*/
+  .makin-moves, .full-stack-dev, .communication {
+    display: inline-block;
+    width: 28%;
+    padding: 2%;
+    vertical-align: text-top;
+  }
+
+/*History*/
+.job, .job-minor {
+  /*border: 1px #d0d0d0 dotted;*/
+/*  outline: 1px black solid;
+*/  display: inline-block;
+  width: 40%;
+  padding: 2%;
+  text-align: center;
+  text-align: center;
+  vertical-align: top;
+}
+
+.job-minor {
+  width: 27%;
+}
+.job {
+  width: 40%;
+}
+  .job-minor h3, .job-minor p, .job h3, .job p {
+    margin-right: -10px;
+    margin-left: -10px;
+  }
+
+  .job img, .job-minor img {
+    max-height: 40%;
+    max-width: 40%;
+    text-align: center;
   }
