@@ -6,10 +6,16 @@
 
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Londrina+Outline' rel='stylesheet' type='text/css'>
-    <link href='/fonts/Yggdrasil.ttf' rel='stylesheet' type='text/css'>
+    <link href='/css/Yggdrasil.ttf' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/font-awesome-4.3.0/css/font-awesome.min.css">
+
 
     <!-- CSS -->
     <link type="text/css" rel="stylesheet" href="/css/stylesheet.css" />
+
+    <!-- Javascript -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/application.js"></script>
 
     <title>Kindy Tice, Full Stack Web Developer</title>
   </head>
@@ -46,7 +52,7 @@
  -->
         <section id="about">
           <h1>About Me</h1>
-          <div class="photo">
+          <div class="avitar">
               <img src="https://avatars1.githubusercontent.com/u/1646209?v=3&s=460" alt="KTT">
           </div>
           <div class="about-text">
@@ -81,52 +87,133 @@
             <h2>Project 2</h2>
             <h2>Project 3</h2>
         </section>
+<!--                  <figure>
+            <img alt="nerd girl" src="img/img3.jpg">
+
+            <figcaption>
+                <h3>I love this title!</h3>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                <p><a href="#">Read More</a></p>
+            </figcaption>
+          </figure> -->
         <section id="timeline">
           <h1>Work History</h1>
-          <div class="job-minor">
-            <img src="/images/tmyba.jpg">
-            <p><h3>TMYBA Concessions</h3>
-              <p><b>(2000-2004)</b><br>Co-managed and oversaw inventory and finances for operation that raised $8,000 to the community.</p>
-          </div>
-          <div class="job-minor">
-            <img src="/images/gahn-meat-co.jpg">
-            <h3>Gahn Meat Co.</h3>
-              <p><b>2006</b><br/>Shift started at 6am, while training for college cross-country season.</p>
-          </div>
-          <div class="job-minor">
-            <img src="/images/The-Custard-Company.jpg">
-            <h3>Custard Company</h3>
-              <p><b>2007</b><br/>Waited tables.</p>
-          </div>
-          <div class="job">
-            <img src="/images/Kul-Wicasa-Oyate.jpg">
-            <h3>Boys &amp; Girls Club of Lower Brule</h3>
-              <p>2008</p>
-          </div>
-          <div class="job">
-            <img src="/images/city-year.jpg">
-            <h3>City Year of North Little Rock</h3>
-          </div>
-          <div class="job">
-            <img src="/images/istreamlogo.png">
-            <h3>iStream Financial Solutions</h3>
-          </div>
-          <div class="job">
-            <img src="/images/betabrand1.jpeg">
-            <h3>Betabrand</h3>
-          </div>
-          <div class="job">
-            <img src="/images/newton-software.jpg">
-            <h3>Newton Software</h3>
-          </div>
-          <div class="job">
-            <img src="/images/dbc.png">
-            <h3>DevBootCamp</h3>
-          </div>
+          <ul class="jobs">
+          <li class="job-minor tmyba">
+            <figure>
+              <img src="/images/tmyba.jpg">
+              <h3>TMYBA Concessions</h3>
+              <figcaption>
+                <h3>Owner/Operator</h3>
+                <p><b>(2000-2004)</b><br>Co-managed and oversaw inventory and finances for operation that raised $8,000 to the community.</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="job-minor gahn">
+            <figure>
+              <img src="/images/gahn-meat-co.jpg">
+              <h3>Gahn Meat Co.</h3>
+            <figcaption>
+              <p><h3>Meat Packer</h3><br/>
+              <b>2006</b><br/>Shift started at 6am, while training for college cross-country season.</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="job-minor custard-company">
+            <figure>
+              <img src="/images/The-Custard-Company.jpg">
+              <h3>Custard Company</h3>
+              <figcaption>
+                <h3>Waiter/Server</h3>
+                <p><b>2007</b><br/>Waited tables.</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="job lower-brule">
+            <figure>
+              <img src="/images/Kul-Wicasa-Oyate.jpg">
+              <h3>Boys &amp; Girls Club of Lower Brule</h3>
+              <figcaption>
+                <h3>Assistant to Grant Writer</h3>
+                <p><b>2008</b><br/>In a service learning trip through South Dakota State University, I performed office and clerical assistance to the Dean Writer of the Boys &amp; Girls Club of Lower Brule. Additionally, I oversaw operations at the Teen Center, ran lunchtime activities at the Elderly Center and assisted in cooking breakfast for the BGC at the Community Center.</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="job city-year">
+            <figure>
+              <img class="bigger-img" src="/images/city-year.jpg">
+              <h3>City Year of North Little Rock</h3>
+              <figcaption>
+                <div>
+                <h3>Corps Member</h3>
+<!--                   <p>Tutored ten K5-2nd Grade students at Mabelvale Elementary during the school days and was team leader and lesson planner in afterschool Starfish program for 35 3rd-5th grade students. Participated in weekly service projects.</p> -->
+                <ul>
+                  <li class="highlights">Tutored ten K5-2nd Grade four times a week at Mabelvale Elementary</li>
+                  <li class="highlights">Team leader and lesson planner in afterschool Starfish program for 35 3rd-5th grade students</li>
+                  <li class="highlights">Participated in weekly service projects. Demonstrated leadership in leading a group of 10 5th graders construct a garden at a local homeless shelter</li>
+                </ul>
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="job istream">
+            <figure>
+              <img class="bigger-img" src="/images/istreamlogo.png">
+              <h3>iStream Financial Solutions</h3>
+              <figcaption>
+                <h3>Customer Care Representative</h3>
+                  <ul>
+                    <li class="highlights">Member of Customer Care team, fielding a high volume of phone and email inquiries (averaging over 500 calls per month).</li>
+                    <li class="highlights">In house expert on company's flagship product, the remote deposit capture terminal. Expertise included troubleshooting, fixing defective models and conducting troubleshooting seminars.</li>
+                    <li class="highlights">Became department's point person for all things technical.</li>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="job betabrand">
+            <figure>
+              <img src="/images/betabrand1.jpeg">
+              <h3>Betabrand</h3>
+              <figcaption>
+                <h3>Director of Customer Service</h3>
+                <p>My interest in programming brought me to San Francisco and on top of taking classes in HTML, Ruby and JavaScript, my first job was at Betabrand, an ecommerce clothing site.<br>At Betabrand, I managed a team of Customer Service reps, was responsible for order fullfillment and expectations and was responsible for web design on new weekly product pages and customer newsletters.</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="job newton">
+            <figure>
+              <img class="bigger-img" src="/images/newton-software.jpg">
+              <h3>Newton Software</h3>
+              <figcaption>
+                <h3>Technical Support</h3>
+                <p>I wore many hats as the fourth member of the Newton team.  </p>
+                </figcaption>
+             </figure>
+          </li>
+          <li class="job dbc">
+            <figure>
+              <img class="bigger-img" src ="/images/dbc.png">
+              <h3>DevBootCamp</h3>
+            <figcaption>
+              <h3>Student</h3>
+            </figcaption>
+            </figure>
+          </li>
         </section>
         <section id="contact">
-          <h1>Contact Information</h1>
-          <p>Let's connect! Let's build something meaningful and beautiful!</p>
+         <div class="contact-icons">
+            <h1>Contact Information</h1>
+            <p>Let's connect! Let's build something meaningful and beautiful!</p>
+            <ul>
+                <li><a href="https://twitter.com/themishu74"><i class="fa fa-twitter fa-2x"></i><br>Twitter</a></li>
+                <li><a href="https://www.linkedin.com/in/kindytice"><i class="fa fa-linkedin fa-2x"></i><br>LinkedIn</a></li>
+                <li><a href="https://github.com/ktice74"><i class="fa fa-github-square fa-2x"></i><br>GitHub</a></li>
+                <li><a href="https://plus.google.com/108251028886081889298"><i class="fa fa-google-plus-square fa-2x"></i><br>Google+</a></li>
+                <li><a href="mailto:kindy.tice@gmail.com"><i class="fa fa-envelope-o fa-2x"></i><br>Email</a></li>
+              </ul>
+          </div>
         </section>
       </main>
     </div>
