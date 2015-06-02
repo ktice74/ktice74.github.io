@@ -1,21 +1,12 @@
-// $(document).ready(function() {
-//   $(".job, .job-minor").hover(
-//     function() {
-//       $(this).addClass('active-job');
-//     },
-//     function() {
-//       $(this).removeClass('active-job');
-//     }
-//     );
-//   $(".job-minor").hover(
-//     function(){
-//       $(this).next('.job-pic').hide();
-//     });
-//   $(".tmyba").on("click", function(){
-//     $(".job-minor").hide();
-//     $("description").removeClass("hidden");
-//   });
-//   $(".job-minor").on("click", function(){
-//     console.log(this);
-//   })
-// });
+$(document).ready(function() {
+  // Projects - Display description when clicked
+  $('#sellme').on("click", function(){
+    $("#sellme").hide();
+    $(".sellme-description").removeClass("hidden");
+  });
+
+  $('#timeless').on("click", function(){
+    $("#timeless").hide();
+    $(".timeless-description").removeClass("hidden");
+  });
+});

@@ -1,6 +1,8 @@
 body {
-  width: 80%;
+  width: 88%;
   margin: 0 auto;
+  font-family: 'Archivo Narrow', sans-serif;
+  color: #0C0F66;
 }
 
 @font-face {
@@ -9,7 +11,14 @@ body {
   }
 
 h1 {
+  font-family: 'Londrina Outline', cursive;
+  font-size: 3em;
   text-align: center;
+  color: #07093D;
+}
+
+.fa {
+  color: #07093D;
 }
 .container {
   padding: 3%;
@@ -21,12 +30,12 @@ section {
 
 nav {
   display: inline-block;
-  width: 76%;
+  width: 83%;
   position: absolute;
   background-color: white;
   margin-top: -3%;
-  border-bottom: 1px black solid;
-  font-family: 'Londrina Outline', cursive;
+  padding-bottom: 1%;
+  /*font-family: 'Londrina Outline', cursive;*/
 }
   nav .logo-box {
     display: inline-block;
@@ -44,6 +53,49 @@ nav {
       float: right;
       width: 10%;
     }
+/* Header */
+
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 10px 15px;
+  font-size: 15px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.btn-xl {
+  padding: 20px 40px;
+  border-color: #6cbee5;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #6cbee5;
+}
+
+.btn-primary {
+  border-color: #6cbee5;
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  color: #fff;
+  background-color: #6cbee5;
+}
+
 
 header {
   padding-top: 15%;
@@ -79,7 +131,6 @@ header {
           font-weight: 700;
           line-height: 50px;
           text-align: center;
-          width: 90%;
           color: #262626;
       }
 
@@ -123,21 +174,26 @@ section {
     width: 100%;
   }
 
-
+/*Intro section*/
 .intro {
-  width: auto;
+  /*width: 60%;*/
   display: inline-block;
 }
+  .avitar {
+    text-align: -webkit-center;
+  }
+    .avitar img {
+      display: inline;
+      border-radius: 50%;
+      /*border: 2px #d0d0d0 solid;*/
+      width: 30% !important;
+    }
 
-.avitar {
-  display: inline-block;
-  text-align: center;
-}
-  .avitar img {
-    border-radius: 50%;
-    border: 2px #d0d0d0 solid;
-    width: 50%;
-    float: right;
+  .about-text {
+    display: inline;
+  }
+  .me-text {
+    /*display: block;*/
   }
 
 /*Skills*/
@@ -148,13 +204,42 @@ section {
     vertical-align: text-top;
   }
 
+ /*Projects */
+#projects {
+  width: 100%;
+}
+  #projects ul.projects-list {
+    list-style-type: none;
+    padding: 2% 0 0 0;
+    text-align: center;
+  }
+   #projects ul.projects-list li {
+    width: 75%;
+    height: auto;
+    margin: 3% auto;
+   }
+    #projects ul.projects-list li img {
+      outline: 2px #d0d0d0 solid;
+    }
+
+span.projects-text {
+  display: table;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+}
+  span.projects-text span {
+    vertical-align: middle;
+    display: table-cell
+  }
 /*History*/
 .job, .job-minor {
   /*border: 1px #d0d0d0 dotted;*/
 /*  outline: 1px black solid;
 */  display: inline-block;
   width: 40%;
-  padding: 2%;
+  padding: 1%;
   text-align: center;
   text-align: center;
   vertical-align: top;
@@ -170,7 +255,7 @@ section {
 }
 
 .job-minor, span.information {
-  width: 27%;
+  width: 28%;
 }
 .job {
   width: 40%;
@@ -180,7 +265,7 @@ section {
     margin-left: -10px;
   }
 
-  .job img, .job-minor img, #job-minor img{
+  .job img, .job-minor img {
     max-height: 40%;
     max-width: 40%;
     text-align: center;
@@ -189,6 +274,9 @@ section {
     .bigger-img {
       max-height: 66% !important;
       max-width: 72% !important;
+    }
+    .bigger-img-minor {
+      max-width: 50% !important;
     }
 
   .active-job {
@@ -272,10 +360,9 @@ figcaption {
 }
 
 figcaption h3 {
-    font-family: 'Open sans';
     font-weight: 400;
     color: #f3b204;
-    /*padding: 10px 20px;*/
+    font-family: 'Archivo Narrow';
     margin-bottom: 0;
     position: relative;
     righ: 100%;
@@ -284,7 +371,6 @@ figcaption h3 {
 }
 
 figcaption p, figcaption li {
-    font-family: 'Open sans';
     margin-bottom: 0;
     /*margin-top: 20px;*/
     position: relative;
@@ -313,12 +399,17 @@ figcaption a:hover {
 }
 
 h3 {
-        font-family: 'Londrina Outline', cursive;
+  font-family: 'Londrina Outline', cursive;
 }
+
+
 
 /* Contact Section */
 .contact-icons {
   margin-top: 3%; }
+  .contact-icons p {
+    text-align: center;
+  }
   .contact-icons h2 {
     text-align: center; }
   .contact-icons ul {

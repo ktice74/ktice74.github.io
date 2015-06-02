@@ -8,8 +8,7 @@
     <link href='http://fonts.googleapis.com/css?family=Londrina+Outline' rel='stylesheet' type='text/css'>
     <link href='/css/Yggdrasil.ttf' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/font-awesome-4.3.0/css/font-awesome.min.css">
-
-
+    <link href='http://fonts.googleapis.com/css?family=Anonymous+Pro:400,700' rel='stylesheet' type='text/css'>
     <!-- CSS -->
     <link type="text/css" rel="stylesheet" href="/css/stylesheet.css" />
 
@@ -22,7 +21,7 @@
   <body>
     <div class="container">
       <nav>
-        <div class="logo-box"><img src="http://strepsil.net/mixes/images/kt.png" alt="go-team">
+        <div class="logo-box"><!-- <img src="http://strepsil.net/mixes/images/kt.png" alt="go-team"> -->
         </div>
         <div class="links">
           <ul>
@@ -39,7 +38,7 @@
             <div class="intro-text">
                 <div class="intro-heading">Kindy Tice</div>
                 <div class="intro-lead-in">Full Stack Web Developer</div>
-                <a href="#team" class="page-scroll btn btn-xl">Tell Me More</a>
+                <a href="#team" class="btn btn-xl">Tell Me More</a>
                 <br>
                 <br>
                 <a href="https://jluse.github.io/Jordan_Luse_Resume_2015.pdf" class="btn btn-primary">Download my Resume</a>
@@ -51,15 +50,16 @@
 <!--           <img src="/images/Mishu.JPG" alt="Mishu">
  -->
         <section id="about">
-          <h1>About Me</h1>
+          <h1><i class="fa fa-bomb"></i>    About Me</h1>
           <div class="avitar">
               <img src="https://avatars1.githubusercontent.com/u/1646209?v=3&s=460" alt="KTT">
           </div>
           <div class="about-text">
             <div class="intro">
-              <p>I'm Kindy Tice, a product of the Midwest although I most recently scratched my California itch for three and a half years. In the Bay Area, I gained valuable work experience in web design and programming and successfully completed a number of courses in both disciplines.</p>
-              <p>Two events led my career path to becoming a web developer. The first was my natural inclination to help people and be a "man for others." When it came time to choose a job out of college, customer service seemed like a natural fit. My first gig was at iStream Financial Solutions, an electronic payment processing company. This role exposed me to the team of developers, whom I admired personally and professionally. They were the first and last line of defense in the event that the software acts unexpectedly and the unspoken trust non-developers had for them defenitely earned my respect.</p>
-              <p>Test.</p>
+              <p>I'm Kindy Tice, a product of the Midwest although I most recently scratched my California itch for three and a half years. In the Bay Area, I gained valuable work experience in <b>web design</b> and <b>programming</b> and successfully completed a number of courses in both disciplines.</p>
+              <p>I've always had a knack for technology, ever since I was young kid.</p>
+              <p><b>Two events</b> led my career path to becoming a web developer. The first was my natural inclination to <b>help people</b> and be a "<b>man for others</b>." When it came time to choose a job out of college, <b>customer service</b> seemed like a natural fit. My first gig was at iStream Financial Solutions, an electronic payment processing company. This role exposed me to the team of <b>developers</b>, whom I admired personally and professionally. They were the first and last line of defense in the event that the software acts unexpectedly and the unspoken trust non-developers had for them defenitely earned my respect.</p>
+              <p>My interest in the field of IT brought me out to the Bay Area. Upon arrival, I enrolled in classes in <b>Ruby, HTML5, JavaScript</b> and <b>web design</b>, just to name a few. I brought my knowledge to the table professionally and did web design work while at <b>Betabrand</b> and <b>Newton Software</b>. Most recently, I completed <b>Dev Bootcamp</b></p>
             </div>
 
           </div>
@@ -67,7 +67,7 @@
         </section>
 
         <section id="skills">
-          <h1>Skills</h1>
+          <h1><i class="fa fa-diamond"></i>    Skills</h1>
             <div class="makin-moves">
               <h2>Makin' Moves, Son!</h2>
                 <p>Always travel outside of your comfort zone. Whether it's trying new things or traveling to new places</p>
@@ -82,45 +82,57 @@
             </div>
         </section>
         <section id="projects">
-            <h1>Projects</h1>
+            <h1><i class="fa fa-suitcase"></i>    Projects</h1>
               <ul class="projects-list">
                 <li id="sellme">
-                  <img src="/images/sellme.png" alt="">
+                  <figure>
+                    <img src="/images/sellme.png" alt="sellme">
+                    <figcaption class="projects-list"><h2><span class="projects-text"><span>SellMe</span></span></h2>
+                    </figcaption>
+                  </figure>
+                  </li>
+              <li class="sellme-description hidden">
+              <h2>SellMe</h2>
+              <p>An online marketplace to empower the buyer. It is a one page web application where users can post a product they want to buy and then the sellers compete to give the user a better price. </p>
+              <p>This was our final project for Dev Bootcamp and was limited to 6 days of development. We chose to tackle the project through a language relatively new to us, AngularJs, with a decoupled Rails-Api.</p>
+              <p><strong>Test User Account:</strong> mishu, <strong>Password:</strong> mishu</p>
+              <a href="http://sellme.us.s3-website-us-west-1.amazonaws.com/#/main"><i class="fa fa-arrow-right fa-3x"></i></a>
+            </li>
+                <li id="timeless">
+                  <figure>
+                    <img src="images/timelessfilms.png" alt="Timeless Films">
+                    <figcaption class="projects-list"><h2><span class="projects-text"><span>Timeless Films</span></span></h2></figcaption>
+                  </figure>
                 </li>
+              <li class="timeless-description hidden">
+              <h2>Timeless Films</h2>
+              <p>Timeless films is a single page movie trivia app where users attempt to reorder the top 10 grossing films from a particular year into the top rated iMDB score.</p>
+              <p>This was my final project for the second phase of DBC. I used an MVC framework and utilized JavaScript, jQuery, etc. </p>
+              <p><strong>Test User Account:</strong> mishu, <strong>Password:</strong> mishu</p>
+              <p><a href="https://github.com/sf-squirrels-2015/sinatra-skeleton-mvc-challenge/tree/KTT">View on GitHub</a></p>
+              <a href="http://sellme.us.s3-website-us-west-1.amazonaws.com/#/main"><i class="fa fa-arrow-right fa-3x"></i></a>
               </ul>
         </section>
-<!--                  <figure>
-            <img alt="nerd girl" src="img/img3.jpg">
-
-            <figcaption>
-                <h3>I love this title!</h3>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-                <p><a href="#">Read More</a></p>
-            </figcaption>
-          </figure> -->
         <section id="timeline">
-          <h1>Work History</h1>
+          <h1><i class="fa fa-history"></i>    Work History</h1>
           <ul class="jobs">
           <li class="job-minor tmyba">
             <figure>
-              <img src="/images/tmyba.jpg">
+              <img class="bigger-img-minor" src="/images/tmyba.jpg">
               <h3>TMYBA Concessions</h3>
               <figcaption>
                 <h3>Owner/Operator</h3>
-                <p><b>(2000-2004)</b><br>Co-managed and oversaw inventory and finances for operation that raised $8,000 to the community.</p>
+                <p><b>(2001-2004)</b><br>The local little league had an inefficient, parent/volunteer run concessions stand. My best friend and I proposed a plan to the Little League board that we could run it on our own. We secured a loan and a trailer from the leauge, got a Sam's Club membership and generated over $16,000 in profits over four summers. I maintained inventory and balanced the books.</p>
               </figcaption>
             </figure>
           </li>
           <li class="job-minor gahn">
             <figure>
-              <img src="/images/gahn-meat-co.jpg">
+              <img class="bigger-img-minor" src="/images/gahn-meat-co.jpg">
               <h3>Gahn Meat Co.</h3>
             <figcaption>
-              <p><h3>Meat Packer</h3><br/>
-              <b>2006</b><br/>Shift started at 6am, while training for college cross-country season.</p>
+              <h3>Meat Packer</h3>
+              <p><b>2006</b><br/>Not as glamorous as running a concessions stand, the summer before college I worked the 6am shift at the meat package factory while running 60 miles/week in preperation for collegiate cross country. The hard work sure made me appreciate my life path that led me to college.</p>
               </figcaption>
             </figure>
           </li>
@@ -140,50 +152,47 @@
               <h3>Boys &amp; Girls Club of Lower Brule</h3>
               <figcaption>
                 <h3>Assistant to Grant Writer</h3>
-                <p><b>2008</b><br/>In a service learning trip through South Dakota State University, I performed office and clerical assistance to the Dean Writer of the Boys &amp; Girls Club of Lower Brule. Additionally, I oversaw operations at the Teen Center, ran lunchtime activities at the Elderly Center and assisted in cooking breakfast for the BGC at the Community Center.</p>
+                <p><b>2008</b><br/>In a service learning program through South Dakota State University, I acted as a liason between visiting volunteer groups and the tribe. Additionally, I performed office and clerical assistance to the Dean Writer of the Boys &amp; Girls Club of Lower Brule. Finally, I oversaw operations at the Teen Center, ran lunchtime activities at the Elderly Center and assisted in cooking breakfast for the BGC at the Community Center.</p>
               </figcaption>
             </figure>
           </li>
-          <li class="job city-year">
+          <a href="http://www.cityyear.org/" target="blank"><li class="job city-year">
             <figure>
               <img class="bigger-img" src="/images/city-year.jpg">
               <h3>City Year of North Little Rock</h3>
               <figcaption>
                 <div>
                 <h3>Corps Member</h3>
+                  <p>I tutored ten K5-2nd grade students four times a week at Mabelvale Elementary School. I was a team leader and ciriculum planner in the afterschool Starfish program for 35 students aged 3rd-5th grade. On the weekends I particpated and often times led service projects. I demonstrated my leadership, interpersonal and athletic skills.</p>
 <!--                   <p>Tutored ten K5-2nd Grade students at Mabelvale Elementary during the school days and was team leader and lesson planner in afterschool Starfish program for 35 3rd-5th grade students. Participated in weekly service projects.</p> -->
-                <ul>
-                  <li class="highlights">Tutored ten K5-2nd Grade four times a week at Mabelvale Elementary</li>
-                  <li class="highlights">Team leader and lesson planner in afterschool Starfish program for 35 3rd-5th grade students</li>
-                  <li class="highlights">Participated in weekly service projects. Demonstrated leadership in leading a group of 10 5th graders construct a garden at a local homeless shelter</li>
-                </ul>
+
                 </div>
               </figcaption>
             </figure>
-          </li>
+          </li></a>
+          <a href="http://www.istreamfs.com/" target="blank">
           <li class="job istream">
             <figure>
               <img class="bigger-img" src="/images/istreamlogo.png">
               <h3>iStream Financial Solutions</h3>
               <figcaption>
                 <h3>Customer Care Representative</h3>
-                  <ul>
-                    <li class="highlights">Member of Customer Care team, fielding a high volume of phone and email inquiries (averaging over 500 calls per month).</li>
-                    <li class="highlights">In house expert on company's flagship product, the remote deposit capture terminal. Expertise included troubleshooting, fixing defective models and conducting troubleshooting seminars.</li>
-                    <li class="highlights">Became department's point person for all things technical.</li>
+                  <p>College intern and subsequently hired full-time, I became a member of the Customer Care team, fielding a high volume of phone and email inquiries (averaging over 500 calls per month). I found my niche as the liason to our development team and became our team's lead on all technical matters. Additionally, I was the company's in house expert on our flagship product, the remote deposit capture terminal. My expertise included troubleshooting, fixing defective models and conducting troubleshooting seminars. </p>
               </figcaption>
             </figure>
-          </li>
+          </li></a>
+          <a href="http://www.betabrand.com/" target="blank">
           <li class="job betabrand">
             <figure>
               <img src="/images/betabrand1.jpeg">
               <h3>Betabrand</h3>
               <figcaption>
                 <h3>Director of Customer Service</h3>
-                <p>My interest in programming brought me to San Francisco and on top of taking classes in HTML, Ruby and JavaScript, my first job was at Betabrand, an ecommerce clothing site.<br>At Betabrand, I managed a team of Customer Service reps, was responsible for order fullfillment and expectations and was responsible for web design on new weekly product pages and customer newsletters.</p>
+                <p>My exposure to the development team at iStream brought me to San Francisco and on top of taking classes in HTML, Ruby and JavaScript, my first job was at Betabrand, an ecommerce clothing site.<br>At Betabrand, I managed a team of Customer Service reps, was responsible for order fullfillment and expectations and was contributed to the web design on new weekly product pages and customer newsletters.</p>
               </figcaption>
             </figure>
-          </li>
+          </li></a>
+          <a href="http://newtonsoftware.com/" target="blank">
           <li class="job newton">
             <figure>
               <img class="bigger-img" src="/images/newton-software.jpg">
@@ -193,7 +202,8 @@
                 <p>I wore many hats as the fourth member of the Newton team.  </p>
                 </figcaption>
              </figure>
-          </li>
+          </li></a>
+          <a href="http://devbootcamp.com/" target="blank">
           <li class="job dbc">
             <figure>
               <img class="bigger-img" src ="/images/dbc.png">
@@ -202,11 +212,11 @@
               <h3>Student</h3>
             </figcaption>
             </figure>
-          </li>
+          </li></a>
         </section>
         <section id="contact">
          <div class="contact-icons">
-            <h1>Contact Information</h1>
+            <h1><i class="fa fa-angellist"></i>    Contact Information</h1>
             <p>Let's connect! Let's build something meaningful and beautiful!</p>
             <ul>
                 <li><a href="https://twitter.com/themishu74"><i class="fa fa-twitter fa-2x"></i><br>Twitter</a></li>
@@ -216,6 +226,9 @@
                 <li><a href="mailto:kindy.tice@gmail.com"><i class="fa fa-envelope-o fa-2x"></i><br>Email</a></li>
               </ul>
           </div>
+        </section>
+        <section id="footer">
+         <p>Kindy Tice &copy2015</p>
         </section>
       </main>
     </div>
