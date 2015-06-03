@@ -27,6 +27,15 @@ a {
     text-decoration: none;
   }
 
+  a:visited {
+    color: #0E4EAD;
+  }
+
+  ul.jobs a, figure h3 {
+    font-weight: normal;
+    color: black;
+  }
+
 .fa {
   color: #07093D;
 }
@@ -73,12 +82,11 @@ nav {
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
-  background-image: none;
   border: 1px solid transparent;
   white-space: nowrap;
   padding: 10px 15px;
   font-size: 15px;
-  line-height: 1.42857143;
+  /*line-height: 1.42857143;*/
   border-radius: 4px;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -91,7 +99,7 @@ nav {
   border-color: #6cbee5;
   border-radius: 3px;
   text-transform: uppercase;
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'Londrina Outline', cursive;
   font-size: 18px;
   font-weight: 700;
   color: #fff;
@@ -99,12 +107,16 @@ nav {
 }
 
 .btn-primary {
-  border-color: #6cbee5;
-  text-transform: uppercase;
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  /*border-color: #6cbee5;*/
+  /*text-transform: uppercase;*/
+  font-family: 'Londrina Outline', cursive;
   font-weight: 700;
-  color: #fff;
+  color: white;
   background-color: #6cbee5;
+}
+
+a.btn.btn-primary a {
+  color: white;
 }
 
 
@@ -435,7 +447,9 @@ h3, h2 {
       text-transform: uppercase;
       font-size: 1.1em; }
       .contact-icons ul li a {
-        color: #d0d0d0;
-        text-decoration: none; }
+        /*color: #d0d0d0;*/
+        text-decoration: none;
+        font-family: 'Londrina Outline', cursive;
+      }
       .contact-icons ul li a:hover {
         color: black; }
