@@ -17,6 +17,13 @@ h1 {
   color: #07093D;
 }
 
+h2 {
+  font-family: 'Londrina Outline', cursive;
+  /*font-size: 3em;*/
+  text-align: center;
+  color: #07093D;
+}
+
 a {
   font-weight: bold;
   color: #0E4EAD;
@@ -305,15 +312,19 @@ ul.jobs {
     }
     .jobs-row-2 {
       max-width: 63% !important;
+      background-color: red;
     }
     .jobs-row-3 {
       max-width: 88% !important;
+      min-width: 338px;
     }
 
     .jobs-row-4 {
        max-width: 76% !important;
     }
-
+      .jobs-row-4-p {
+       font-size: 11px;
+      }
   .active-job {
     background-color: #d0d0d0;
   }
@@ -362,6 +373,7 @@ figure {
     cursor: pointer;
     overflow: visible;
     border: 3px solid #fff;
+    width: auto;
 }
 
 figure:hover figcaption {
