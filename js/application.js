@@ -9,4 +9,8 @@ $(document).ready(function() {
     $("#timeless").hide();
     $(".timeless-description").removeClass("hidden");
   });
+  $('#snake').on("click", function(){
+    $("#snake").hide();
+    $(".snake-description").removeClass("hidden");
+  });
 });

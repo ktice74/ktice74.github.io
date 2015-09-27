@@ -258,6 +258,9 @@ section {
     #projects ul.projects-list li img {
       outline: 2px #d0d0d0 solid;
     }
+      #projects ul.projects-list li#snake {
+        width: 30%;
+      }
 
 span.projects-text {
   display: table;

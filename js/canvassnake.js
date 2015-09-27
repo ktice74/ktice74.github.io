@@ -1,4 +1,5 @@
 window.onload = function() {
+  console.log("canvassnake activated")
   var canvas = document.createElement("canvas"),
   ctx = canvas.getContext("2d");
   score = 0;
@@ -17,8 +18,8 @@ window.onload = function() {
   canvas.width = 204;
   canvas.height = 224;
 
-  var body = document.getElementsByTagName("body")[0];
-  body.appendChild(canvas);
+  var snakeDescription = document.getElementsByClassName("snake-description")[0];
+  snakeDescription.appendChild(canvas);
 
   //Add the snake
   map = generateSnake(map)
@@ -31,6 +32,7 @@ window.onload = function() {
   //Keystrokes determine direction
   window.addEventListener('keydown', function(e){
     console.log(e)
+    e.preventDefault();
     if (e.keyCode === 38 && direction !== 3) {
       direction = 2; //Up
     } else if (e.keyCode === 40 && direction !== 2) {
@@ -63,8 +65,8 @@ window.onload = function() {
             snake[0] = {x: snake[0].x, y: snake[0].y + 1}
             break;
         }
-        console.log(snake)
-        console.log(map)
+        // console.log(snake)
+        // console.log(map)
         //Check if snake is out of bounds
         if (snake[0].x < 0 || snake[0].x >= 20 || snake[0].y < 0 || snake[0].y >= 20) {
           showGameOver();
