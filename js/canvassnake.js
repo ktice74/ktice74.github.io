@@ -1,13 +1,14 @@
-window.onload = function() {
-  console.log("canvassnake activated")
-  var canvas = document.createElement("canvas"),
-  ctx = canvas.getContext("2d");
+$('#play-snake').on("click", function() {
+  ("#play-snake").innerHTML="Button Two"
+  var canvas = document.getElementsByClassName("canvas")[0];
+  var ctx = canvas.getContext("2d");
   score = 0;
-  level = 0;
+  level = 1;
   direction = 0;
   snake = new Array(3);
   active = true;
   speed = 280;
+  console.log("canvassnake activated");
 
   // Initialize the matrix
   var map = new Array(20);
@@ -17,9 +18,6 @@ window.onload = function() {
 
   canvas.width = 204;
   canvas.height = 224;
-
-  var snakeDescription = document.getElementsByClassName("snake-description")[0];
-  snakeDescription.appendChild(canvas);
 
   //Add the snake
   map = generateSnake(map)
@@ -32,6 +30,7 @@ window.onload = function() {
   //Keystrokes determine direction
   window.addEventListener('keydown', function(e){
     console.log(e)
+    console.log(active)
     e.preventDefault();
     if (e.keyCode === 38 && direction !== 3) {
       direction = 2; //Up
@@ -111,27 +110,32 @@ window.onload = function() {
     for (var x = 0; x < map.length; x++) {
         for (var y = 0; y < map[0].length; y++) {
             if (map[x][y] === 1) {
-                ctx.fillStyle = 'black';
+                ctx.fillStyle = '#F433FF';
                 ctx.fillRect(x * 10, y * 10 + 20, 10, 10);
             } else if (map[x][y] === 2) {
-                ctx.fillStyle = 'orange';
+                ctx.fillStyle = '#3DFF33';
                 ctx.fillRect(x * 10, y * 10 + 20, 10, 10);
             }
         }
     }
     if(active) {
-      setTimeout(drawGame, speed - (level*50));
+      setTimeout(drawGame, speed - (level*30));
     }
 
   }
 
   function drawMain(){
     ctx.lineWidth = 2;
-    ctx.strokeStyle = "black";
+    ctx.strokeStyle = "gray";
 
-    ctx.strokeRect(2, 20, canvas.width - 4, canvas.height - 24);
-    // ctx.font = "12px sans-serif"
-    ctx.fillText("Score: " + score + " - Level: " + level , 2, 12)
+  // var snakeDescription = document.getElementsByClassName("snake-description")[0];
+  // snakeDescription.appendChild(canvas);
+
+  $("#snake-score").html(score);
+  $("#snake-level").html(level);
+
+    ctx.strokeRect(2, 20, canvas.width - 4, canvas.height - 23);
+    // ctx.fillText("Score: " + score + " - Level: " + level , 2, 12)
   }
 
 
@@ -176,12 +180,13 @@ window.onload = function() {
 
 
 
-
   function showGameOver(){
     active = false;
     ctx.clearRect(0,0, canvas.width, canvas.height);
-
+    ctx.font = "black"
     ctx.fillText('Game Over!', ((canvas.width / 2) - (ctx.measureText('Game Over!').width / 2)), 50);
     ctx.fillText("Your score was " + score, ((canvas.width)/2 - (ctx.measureText("Your Score was" + score).width/2)), 70);
+    ctx.fillText("To restart, click the 'Play Snake?' link above.",((canvas.width)/2 - (ctx.measureText("To restart, click the 'Play Snake?' link above.").width/2)), 90);
   }
-};
+
+});

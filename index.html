@@ -13,9 +13,9 @@
     <link type="text/css" rel="stylesheet" href="css/stylesheet.css" />
 
     <!-- Javascript -->
-    <script src="js/canvassnake.js" type="text/javascript"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="js/application.js"></script>
+
 
 
     <title>Kindy Tice, Full Stack Web Developer</title>
@@ -118,7 +118,11 @@
               <li class="snake-description hidden">
                 <h2>Snake</h2>
                 <p>The classic arcade game Snake, built in HTML5 canvas</p>
+                <p><a id="play-snake">Play Snake?</a></p>
               </li>
+              <p class="snake-scoreboard hidden">Score: <span id="snake-score"></span></p>
+              <canvas class="canvas hidden"></canvas>
+              <p class="snake-scoreboard hidden">Level: <span id="snake-level"></span></p>
                 <li id="timeless">
                   <figure>
                     <img src="images/timelessfilms.png" alt="Timeless Films">
@@ -256,5 +260,5 @@
         </section>
       </main>
     </div>
-
+    <script src="js/canvassnake.js" type="text/javascript"></script>
   </body>

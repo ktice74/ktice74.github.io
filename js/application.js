@@ -12,5 +12,8 @@ $(document).ready(function() {
   $('#snake').on("click", function(){
     $("#snake").hide();
     $(".snake-description").removeClass("hidden");
+    $(".canvas").removeClass('hidden');
+    $(".snake-scoreboard").removeClass('hidden');
+
   });
 });

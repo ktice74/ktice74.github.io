@@ -261,7 +261,9 @@ section {
       #projects ul.projects-list li#snake {
         width: 30%;
       }
-
+        a#play-snake {
+          cursor: pointer;
+        }
 span.projects-text {
   display: table;
   width: 100%;
