@@ -110,10 +110,10 @@ $('#play-snake').on("click", function() {
     for (var x = 0; x < map.length; x++) {
         for (var y = 0; y < map[0].length; y++) {
             if (map[x][y] === 1) {
-                ctx.fillStyle = '#F433FF';
+                ctx.fillStyle = '#ea0b29';
                 ctx.fillRect(x * 10, y * 10 + 20, 10, 10);
             } else if (map[x][y] === 2) {
-                ctx.fillStyle = '#3DFF33';
+                ctx.fillStyle = '#355e3b';
                 ctx.fillRect(x * 10, y * 10 + 20, 10, 10);
             }
         }
