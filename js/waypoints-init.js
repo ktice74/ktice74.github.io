@@ -3,7 +3,7 @@ jQuery(function($) {
 ( function( window, $, undefined ) {
   'use strict';
 
-  $('.intro p').waypoint(function() {
+  $('.intro p, .slide-left').waypoint(function() {
     $(this).toggleClass( 'animated fadeInLeft' );
   },
   {
@@ -12,7 +12,7 @@ jQuery(function($) {
   });
 
 
-  $('.intro h2').waypoint(function() {
+  $('.intro h2, .slide-right').waypoint(function() {
     $(this).toggleClass( 'animated fadeInRight' );
   },
   {

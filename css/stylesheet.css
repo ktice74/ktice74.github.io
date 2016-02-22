@@ -1,5 +1,4 @@
 body {
-  width: 88%;
   margin: 0 auto;
   font-family: 'Archivo Narrow', sans-serif;
   color: #0C0F66;
@@ -50,8 +49,8 @@ a {
   color: #07093D;
 }
 .container {
-  padding: 3%;
-}
+/*  padding: 3%;
+*/}
 
 section {
   padding: 3%;
@@ -59,11 +58,10 @@ section {
 
 nav {
   display: inline-block;
-  width: 83%;
-  position: absolute;
+  width: 100%;
+  position: relative;
   background-color: white;
-  margin-top: -3%;
-  padding-bottom: 1%;
+  padding-bottom: 10px;
   font-family: 'Londrina Outline', cursive;
 }
   nav .logo-box {
@@ -96,7 +94,7 @@ nav {
   border: 1px solid transparent;
   white-space: nowrap;
   padding: 10px 15px;
-  font-size: 15px;
+  font-size: 18px;
   /*line-height: 1.42857143;*/
   border-radius: 4px;
   -webkit-user-select: none;
@@ -133,7 +131,7 @@ a.btn.btn-primary a {
 
 header {
   padding-top: 15%;
-  background-image: url("/images/Mishu.JPG");
+  background-image: url("../images/Mishu.JPG");
   background-size: cover;
   background-position: 50% 50%;
   background-position: center center;
