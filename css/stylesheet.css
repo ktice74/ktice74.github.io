@@ -80,7 +80,7 @@ nav {
     nav ul li {
       display: inline-block;
       float: right;
-      width: 10%;
+      width: auto;
       font-size: 1.75em;
       padding: 0px 5px;
     }
