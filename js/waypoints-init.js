@@ -38,11 +38,11 @@ jQuery(function($) {
     // triggerOnce: true
   });
 
-  $('.roll-wrapper .prod_3').waypoint(function() {
-    $(this).toggleClass( 'animated fadeInRight' );
+  $('.avitar').waypoint(function() {
+    $(this).toggleClass( 'animated rotateIn' );
   },
   {
-    offset: '100%'
+    offset: '90%'
     // triggerOnce: true
   });
 
