@@ -47,7 +47,7 @@ jQuery(function($) {
   });
 
   $('.row-5, .row-4, .row-3, .row-2, .row-1').waypoint(function() {
-    $(this).toggleClass( 'animated rubberBand' );
+    $(this).toggleClass( 'animated bounceIn' );
   },
   {
     offset: '90%'
