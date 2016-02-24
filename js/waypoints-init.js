@@ -42,11 +42,17 @@ jQuery(function($) {
     $(this).toggleClass( 'animated rotateIn' );
   },
   {
-    offset: '90%'
+    offset: '80%'
     // triggerOnce: true
   });
 
-
+  // $('.links').waypoint(function() {
+  //   $(this).toggleClass( 'animated tada' );
+  // },
+  // {
+  //   offset: '90%'
+  //   // triggerOnce: true
+  // });
 
 
 })( this, jQuery );
