@@ -62,7 +62,6 @@ nav {
   position: relative;
   background-color: white;
   font-family: 'Londrina Outline', cursive;
-  position: fixed;
   background-color: #fff;
   z-index: 1;
 }
