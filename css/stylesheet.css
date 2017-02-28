@@ -619,7 +619,12 @@ h3, h2 {
   .row-5 .placeholder {
     height: auto;
   }
+  .contact-icons ul li {
+    width: 19%;
+  }
+}
 
+@media screen and (max-width: 600px) {
 }
 
 @media screen and (max-width: 500px) {
