@@ -92,6 +92,8 @@ nav {
       font-size: 1.75em;
       padding: 0px 5px;
     }
+
+
 /* Header */
 
 .btn {
@@ -217,6 +219,8 @@ section {
   }
 
 /*Intro section*/
+
+
 .intro {
   /*width: 60%;*/
   display: inline-block;
@@ -290,6 +294,8 @@ span.projects-text {
     vertical-align: middle;
     display: table-cell
   }
+
+
 /*History*/
 .job, .job-minor {
   /*border: 1px #d0d0d0 dotted;*/
@@ -523,12 +529,12 @@ h3, h2 {
 .row-4 .placeholder {
   height: 230px;
 }
-.tmyba img {
+.tmyba .placeholder img {
   max-width: 140px;
 }
 
-.brule img,
-.betabrand img {
+.brule .placeholder img,
+.betabrand .placeholder img {
   max-width: 160px;
 }
 
@@ -591,6 +597,44 @@ h3, h2 {
 /*ul.jobs li.col-md-3 {
   height: 160px;
 }*/
+
+
+@media screen and (max-width: 768px) {
+  .placeholder img {
+    max-width: 250px;
+  }
+
+  .gahn, .city-year {
+    margin: 25px 0;
+  }
+
+  .istream img {
+    padding: 0;
+  }
+
+  .row-1 .placeholder,
+  .row-2 .placeholder,
+  .row-3 .placeholder,
+  .row-4 .placeholder,
+  .row-5 .placeholder {
+    height: auto;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .img-roll-hover {
+    position: relative;
+    background: rgba(0,0,0,0);
+  }
+
+  .img-roll-hover p,
+  .img-roll-hover h3,
+  .img-roll-hover h4 {
+    color: #000;
+  }
+}
+
 /* Contact Section */
 .contact-icons {
   margin-top: 3%; }
