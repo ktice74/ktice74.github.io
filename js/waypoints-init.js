@@ -46,13 +46,13 @@ jQuery(function($) {
     // triggerOnce: true
   });
 
-  $('.row-5, .row-4, .row-3, .row-2, .row-1').waypoint(function() {
-    $(this).toggleClass( 'animated bounceIn' );
-  },
-  {
-    offset: '90%'
-    // triggerOnce: true
-  });
+  // $('.row-5, .row-4, .row-3, .row-2, .row-1').waypoint(function() {
+  //   $(this).toggleClass( 'animated zoomIn' );
+  // },
+  // {
+  //   offset: '90%'
+  //   // triggerOnce: true
+  // });
 
 })( this, jQuery );
 
